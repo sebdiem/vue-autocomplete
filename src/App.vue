@@ -7,15 +7,20 @@
 <script>
   import Autocomplete from './components/Autocomplete'
   const suggestions = [
-    {description: 'Versailles'},
-    {description: 'Vincennes'},
-    {description: 'Vilaines'},
     {description: 'Paris'},
-    {description: 'Nantes'},
-    {description: 'Nanger'},
-    {description: 'Bordeaux'},
     {description: 'Marseille'},
     {description: 'Lyon'},
+    {description: 'Toulouse'},
+    {description: 'Nice'},
+    {description: 'Nantes'},
+    {description: 'Strasbourg'},
+    {description: 'Montpellier'},
+    {description: 'Bordeaux'},
+    {description: 'Lille'},
+    {description: 'Rennes'},
+    {description: 'Le Havre'},
+    {description: 'Reims'},
+    {description: 'Saint-Étienne'},
   ]
   export default {
     name: 'app',

@@ -2,6 +2,8 @@
 
 > An autocomplete component for vuejs 2
 
+![vue-autocomplete demo](https://raw.githubusercontent.com/sebdiem/vue-autocomplete/master/demo.gif)
+
 ## Available functionnalities
 
 - Autocomplete from a list of suggestions
@@ -47,7 +49,7 @@ is displayed to the user.
 <script>
   import autocomplete from './Autocomplete'
   const suggestions = [
-    {description: 'Paris'
+    {description: 'Paris'},
     {description: 'Marseille'},
     {description: 'Lyon'},
     {description: 'Toulouse'},
