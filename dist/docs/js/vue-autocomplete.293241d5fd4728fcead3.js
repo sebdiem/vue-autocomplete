@@ -1,0 +1,2 @@
+webpackJsonp([1],{5:function(m,e){throw new Error("Module build failed: SyntaxError: Unexpected token (1:10)\n\n[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m vue[33m-[39mautocomplete from [32m'./components/Hello'[39m\n [90m   | [39m          [31m[1m^[22m[39m\n [90m 2 | [39m\n [90m 3 | [39m[36mexport[39m [36mdefault[39m vue[33m-[39mautocomplete\n [90m 4 | [39m[0m\n")}},[5]);
+//# sourceMappingURL=vue-autocomplete.293241d5fd4728fcead3.js.map
