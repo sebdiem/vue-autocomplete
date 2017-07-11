@@ -26,7 +26,7 @@
 
 .results {
   padding: 0;
-  width: 100%;
+  width: inherit;
   background-color: white;
 }
 
@@ -35,6 +35,9 @@
   padding: 0.8em 1em;
   cursor: pointer;
   font-size: 0.8rem;
+}
+.results li:last-child {
+  border-bottom: solid 1px #aaa;
 }
 
 .results ul {

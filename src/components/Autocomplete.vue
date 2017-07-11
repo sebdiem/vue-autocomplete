@@ -1,6 +1,6 @@
 <template>
   <div class="vue-autocomplete">
-    <input type="text" ref="input" v-model="userInput" :placeholder="placeholder" class="user-input"
+    <input type="search" ref="input" v-model="userInput" :placeholder="placeholder" class="user-input"
      @focusin="toggleFocus" @focusout="toggleFocus"
      @focus="toggleFocus" @blur="toggleFocus"
      @keydown.enter="select"
