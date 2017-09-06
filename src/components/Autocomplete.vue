@@ -85,7 +85,7 @@ export default {
       if (suggestionPromise == null || suggestionPromise.then == null) {
         throw new Error('updateSuggestions shall return a Promise object')
       }
-      this.updateSuggestions(this.userInput).then((suggestions) => {
+      suggestionPromise.then((suggestions) => {
         this.suggestions = suggestions.splice(0) || []
         this.currentChoice = 0
       })
