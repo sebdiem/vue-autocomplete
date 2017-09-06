@@ -96,10 +96,16 @@ export default {
       if (selection == null) {
         return
       }
-      this.userInput = selection.description
+      this.userInput = stripHtml(selection.description)
       this.$emit('select', selection)
       this.suggestions = []
     },
   },
+}
+
+function stripHtml (html) {
+  const temporalDivElement = document.createElement('div')
+  temporalDivElement.innerHTML = html
+  return temporalDivElement.textContent || temporalDivElement.innerText || ''
 }
 </script>
