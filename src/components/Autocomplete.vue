@@ -11,7 +11,7 @@
     <div v-show="open" class="results">
       <ul>
         <li v-for="(suggestion, index) in suggestions" :class="{'active': isActive(index)}" @click="select(index)" @mouseover="current=index">
-            <a href="#" class="link">{{ suggestion.description }}</a>
+          <a href="#" class="link" v-html="suggestion.description"></a>
         </li>
         <li v-if="credentials" class="credentials">{{ credentials }}</li>
       </ul>
