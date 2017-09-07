@@ -60,7 +60,6 @@ export default {
   },
   created: function () {
     this.change = debounce(this.change, 300)
-    this.toggleFocus = debounce(this.toggleFocus, 100)  // let other events (click on result) fire before
   },
   methods: {
     up: function () {
@@ -77,8 +76,10 @@ export default {
       return index === this.currentChoice
     },
     toggleFocus: function () {
-      this.focus = (document.activeElement === this.$refs.input)
-      this.$emit('focus', this.focus)
+      setTimeout(() => {
+        this.focus = (document.activeElement === this.$refs.input)
+        this.$emit('focus', this.focus)
+      }, 1000)  // let other events (click on result) fire before
     },
     change: function () {
       const suggestionPromise = this.updateSuggestions(this.userInput)
