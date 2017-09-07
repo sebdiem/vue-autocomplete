@@ -60,7 +60,7 @@ export default {
   },
   created: function () {
     this.change = debounce(this.change, 300)
-    this.toggleFocus = debounce(this.toggleFocus, 50)  // let other events (click on result) fire before
+    this.toggleFocus = debounce(this.toggleFocus, 100)  // let other events (click on result) fire before
   },
   methods: {
     up: function () {
