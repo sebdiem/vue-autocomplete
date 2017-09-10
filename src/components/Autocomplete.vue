@@ -76,9 +76,10 @@ export default {
       return index === this.currentChoice
     },
     toggleFocus: function () {
+      const focus = (document.activeElement === this.$refs.input)
+      this.$emit('focus', focus)
       setTimeout(() => {
-        this.focus = (document.activeElement === this.$refs.input)
-        this.$emit('focus', this.focus)
+        this.focus = focus
       }, 1000)  // let other events (click on result) fire before
     },
     change: function () {
